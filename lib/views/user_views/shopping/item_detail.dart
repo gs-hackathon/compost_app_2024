@@ -25,7 +25,7 @@ class _ItemDetailPageState extends State<ItemDetailPage> {
           bottomOpacity: 0,
           backgroundColor: mainColor,
           centerTitle: true,
-          title: const Text('Ürün Detayı'),
+          title: const Text('Item Detail'),
         ),
         body: SingleChildScrollView(
           child: Column(
@@ -40,17 +40,17 @@ class _ItemDetailPageState extends State<ItemDetailPage> {
                             style: const TextStyle(
                                 fontSize: 20, fontWeight: FontWeight.bold)),
                         const SizedBox(height: 10),
-                        Text("${widget.product!.points} Puan",
+                        Text("${widget.product!.points} Point",
                             style: TextStyle(
                                 fontSize: 20, color: Colors.yellow[800])),
                         const SizedBox(height: 10),
-                        const Text("Ürün Açıklaması",
+                        const Text("Description",
                             style: TextStyle(
                                 fontSize: 16, fontWeight: FontWeight.bold)),
                         const SizedBox(height: 5),
                         Text(widget.product!.description),
                         const SizedBox(height: 10),
-                        const Text("Adet",
+                        const Text("Quantity",
                             style: TextStyle(
                                 fontSize: 16, fontWeight: FontWeight.bold)),
                         Row(
@@ -77,10 +77,12 @@ class _ItemDetailPageState extends State<ItemDetailPage> {
                           child: TextButton(
                               onPressed: () {
                                 print("bastıı");
-                                Get.snackbar("İlan oluşturma",
-                                    "İlanınız Başarıyla oluşturulmuştur.");
+                                Get.snackbar(
+                                  "Post Created",
+                                  "Your order has been received. We will contact you soon.",
+                                );
                               },
-                              child: const Text("Sipariş Ver",
+                              child: const Text("Order Now",
                                   style: TextStyle(
                                       color: Colors.white, fontSize: 16))),
                         )

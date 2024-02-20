@@ -50,11 +50,12 @@ class _ChallangePageState extends State<ChallangePage> {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.end,
                       children: [
-                        const Text("Ödül"),
+                        const Text("Reward"),
                         Row(
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
-                            const Icon(Icons.stars, color: Colors.yellow, size: 18),
+                            const Icon(Icons.stars,
+                                color: Colors.yellow, size: 18),
                             const SizedBox(width: 5),
                             Column(children: [
                               Text(
@@ -82,7 +83,7 @@ class _ChallangePageState extends State<ChallangePage> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text("Kurallar",
+                    Text("Campaign Rules",
                         style: TextStyle(color: Colors.tealAccent[700])),
                     const SizedBox(height: 15),
                     Text(widget.taskRules![0]!),
@@ -111,7 +112,7 @@ class _ChallangePageState extends State<ChallangePage> {
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.tealAccent[700],
                     ),
-                    child: const Text("Kabul Et",
+                    child: const Text("Apply Now",
                         style: TextStyle(color: Colors.white, fontSize: 16))))
           ],
         ),

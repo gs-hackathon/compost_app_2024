@@ -16,45 +16,45 @@ class ItemsPage extends StatefulWidget {
 class _ItemsPageState extends State<ItemsPage> {
   List<Product> products = [
     Product(
-        "Piknik Masası",
+        "Picnic Table",
         "https://img.vivense.com/1920x1280/images/5aa5cac4d2ce4e2c8b4f9f0728de19ad.jpg",
         2000,
-        "Değerli atıklarınız ile piknik masası kazanabilirsiniz.",
+        "You can earn a picnic table with your valuable waste.",
         1,
         true),
     Product(
-        "Fidan",
+        "Sapling",
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrqPoIhECBLoBTCCPDx2g9tzDTtpIohG7WWUPEkGRQUVlE0NKuS7Am-gJ7XcH513g4KaY&usqp=CAU",
         70,
-        "Bir adet fidan dikerek geleceğe umut olabilirisiniz.",
+        "You can be a hope for the future by planting a sapling. Image is an example, may vary. 5 saplings.",
         1,
         false),
     Product(
-        "Maske",
+        "Covid-19 Mask",
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEgCcvOsIFqgRlw63EooI0FQzTIa8zw_8Qp7TckM5eIP0_dbT3ZJ3zoj6E_4iaRjaDY0c&usqp=CAU",
         200,
-        "Telli Cerrahi Paket (50'li Paket)",
+        "200 pieces of surgical mask.",
         1,
         false),
     Product(
-        "Bahçe Çiçeği",
+        "Garden Flower",
         "https://www.bahcecicekavcilar.com/bca/ambar/urunler/B_ufot_5191b07cb061711bb560e1b57a2c8d88.jpg",
         100,
-        "Bahce Çiçeği / 100 Tohum Görsel örnektir, farklılık gösterebilir.",
+        "100 Seeds Image is an example, may vary.",
         1,
         true),
     Product(
-        "Çamaşır Suyu",
+        "Laundry Bleach",
         "https://cdn03.ciceksepeti.com/cicek/kc7820192-1/XL/domestos-camasir-suyu-dag-esintisi-750-ml.-kc7820192-1-f1580b874af24191a433674e44dd5997.jpg",
         100,
-        "Çamaşır Suyu 5lt",
+        "Laundry Bleach 5000 ml. Image is an example, may vary.",
         1,
         false),
     Product(
-        "Yüzey Temizleyicisi",
+        "Floor Cleaner",
         "https://images.migrosone.com/sanalmarket/product/30711898/30711898-2b7bdf-1650x1650.jpg",
         100,
-        "Yüzey Temizleyicisi",
+        "Floor Cleaner 1000 ml. Image is an example, may vary.",
         1,
         false),
   ];
@@ -69,7 +69,7 @@ class _ItemsPageState extends State<ItemsPage> {
                 "https://static.vecteezy.com/system/resources/previews/024/555/719/non_2x/coins-stack-illustration-coins-icon-flat-free-png.png",
                 width: 20),
             const SizedBox(width: 10),
-            Text("Puan: 0.0", style: TextStyle(color: mainColor)),
+            Text("Point: 0.0", style: TextStyle(color: mainColor)),
           ],
         )
       ],
@@ -78,7 +78,7 @@ class _ItemsPageState extends State<ItemsPage> {
         bottomOpacity: 0,
         backgroundColor: mainColor,
         centerTitle: true,
-        title: const Text('Dükkan'),
+        title: const Text('Shopping Page'),
       ),
       body: TitleScrollNavigation(
         barStyle: TitleNavigationBarStyle(
@@ -92,7 +92,7 @@ class _ItemsPageState extends State<ItemsPage> {
         identiferStyle: NavigationIdentiferStyle(
           color: mainColor,
         ),
-        titles: const ["Ürünler", "Siparişlerim"],
+        titles: const ["Items", "Orders"],
         pages: [
           planScreen(products),
           planScreen(
@@ -138,7 +138,7 @@ class _ItemsPageState extends State<ItemsPage> {
                     height: 20,
                     color: Colors.amber,
                     alignment: Alignment.center,
-                    child: Text("${products[i].points} Puan",
+                    child: Text("${products[i].points} Point",
                         style: const TextStyle(color: Colors.white)),
                   )
                 ],

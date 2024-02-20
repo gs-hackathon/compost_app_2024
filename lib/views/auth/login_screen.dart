@@ -158,7 +158,7 @@ class _LoginScreenState extends State<LoginScreen>
             ])),
         child: const Center(
           child: Text(
-            "Giriş Yap",
+            "Login",
             style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
           ),
         ),
@@ -179,7 +179,7 @@ class _LoginScreenState extends State<LoginScreen>
             ])),
         child: const Center(
           child: Text(
-            "Kayıt Ol",
+            "Register Page",
             style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
           ),
         ),
@@ -196,7 +196,7 @@ class _LoginScreenState extends State<LoginScreen>
         controller: passwordController,
         decoration: InputDecoration(
             border: InputBorder.none,
-            hintText: "Parola",
+            hintText: "Password",
             hintStyle: TextStyle(color: Colors.grey[400])),
       ),
     );
@@ -225,7 +225,7 @@ class _LoginScreenState extends State<LoginScreen>
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Text(
-            "Hoş Geldiniz",
+            "Welcome!",
             style: TextStyle(
               fontSize: 18,
             ),

@@ -20,9 +20,9 @@ class UserHomePage extends StatefulWidget {
 
 class _UserHomePageState extends State<UserHomePage> {
   List<String> selectedCompanies = [
-    "kağıt",
-    "plastik",
-    "metal",
+    "Paper",
+    "Plastic",
+    "Metal",
   ];
   // List<Challange> challanges = [
   //   Challange(
@@ -70,7 +70,7 @@ class _UserHomePageState extends State<UserHomePage> {
             children: [
               Container(
                   alignment: Alignment.centerLeft,
-                  child: const Text("Aktif Talebim",
+                  child: const Text("Active Post",
                       style: TextStyle(
                           fontSize: 16, fontWeight: FontWeight.bold))),
               const SizedBox(
@@ -116,25 +116,25 @@ class _UserHomePageState extends State<UserHomePage> {
                           Wrap(
                             runSpacing: 5,
                             children: [
-                              myContainer("Plastik"),
-                              myContainer("Kağıt"),
-                              myContainer("Karton"),
-                              myContainer("Demir"),
-                              myContainer("Alüminyum"),
-                              myContainer("Şişe"),
+                              myContainer("Plastic"),
+                              myContainer("Paper"),
+                              myContainer("Cardboard"),
+                              myContainer("Metal"),
+                              myContainer("Glass"),
+                              myContainer("Battery"),
                             ],
                           ),
                           const Divider(),
                           Text(
-                              "${"Adress: Orhan Gazi Mah. 1672. sok No:42/44".substring(0, 30)}...",
+                              "${"Adress: Orhan Gazi Avenue. 1672. Street No:42/44".substring(0, 30)}...",
                               style: const TextStyle(
                                   fontSize: 12, color: Colors.white)),
                           const Divider(),
-                          const Text("Alınma Tarihi: 15.12.2020",
+                          const Text("Will be taking at: 15.12.2020",
                               style:
                                   TextStyle(fontSize: 12, color: Colors.white)),
                           const Divider(),
-                          const Text("Oluşturulma Tarihi: 15.12.2020",
+                          const Text("Created at: 15.12.2020",
                               style:
                                   TextStyle(fontSize: 12, color: Colors.white)),
                           const SizedBox(height: 30)
@@ -179,7 +179,7 @@ class _UserHomePageState extends State<UserHomePage> {
             children: [
               Container(
                   alignment: Alignment.centerLeft,
-                  child: const Text("Tavsiye Edilen",
+                  child: const Text("Recommended Challanges",
                       style: TextStyle(
                           fontSize: 16, fontWeight: FontWeight.bold))),
               const SizedBox(
@@ -191,13 +191,13 @@ class _UserHomePageState extends State<UserHomePage> {
                   recommendedItemContainer(
                       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv-9at0_5dFtaGusjGE8tagkJN_35Ky8_iqQ&usqp=CAU",
                       "4.5",
-                      "Karton Toplama",
-                      "10 karton topla",
-                      "1 gün", [
-                    "Karton Ağırlığı 5 kilogramın üstünde olmalıdır.",
-                    "Görevi kabul ettiğin andan itibaren 1 gün içerisinde tamamlamalısın.",
-                    "Erken bitirerek ek ödüller alabilirsin.",
-                    "Görevi bitirdikten sonra gel al butonuna basabilirsiniz."
+                      "Cardboard Campaing",
+                      "Collect 10 cardboard",
+                      "1 day", [
+                    "Carton Weight must be over 5 kilograms.",
+                    "You must complete the task within 1 day from the moment you accept it.",
+                    "You can get additional rewards if you finish it early.",
+                    "After completing the mission, you can create a post for the officers to collect the waste."
                   ]),
                   const SizedBox(
                     width: 16,
@@ -205,13 +205,13 @@ class _UserHomePageState extends State<UserHomePage> {
                   recommendedItemContainer(
                       "https://www.storhub.com.sg/theme/images/articles/201902/5-Ways-to-Recycle-Old-Books-in-Singapore-2-1024x682.jpg",
                       "3.5",
-                      "Kitaplar",
-                      "30 kitap topla",
-                      "2 gün", [
-                    "Kitap Ağırlığı 10 kilogramın üstünde olmalıdır.",
-                    "Görevi kabul ettiğin andan itibaren 2 gün içerisinde tamamlamalısın.",
-                    "Erken bitirerek ek ödüller alabilirsin.",
-                    "Görevi bitirdikten sonra gel al butonuna basabilirsiniz."
+                      "Books Campaing",
+                      "Collect 30 books",
+                      "2 days", [
+                    "Total weight must be over 10 kilograms.",
+                    "You must complete the task within 2 day from the moment you accept it.",
+                    "You can get additional rewards if you finish it early.",
+                    "After completing the mission, you can create a post for the officers to collect the waste."
                   ]),
                   const SizedBox(
                     width: 16,
@@ -219,13 +219,13 @@ class _UserHomePageState extends State<UserHomePage> {
                   recommendedItemContainer(
                       "https://www.storhub.com.sg/theme/images/articles/201902/5-Ways-to-Recycle-Old-Books-in-Singapore-2-1024x682.jpg",
                       "4.0",
-                      "Elektronik Aletler",
-                      "12 elektronik alet topla",
-                      "4 gün", [
-                    "Karton Ağırlığı 5 kilogramın üstünde olmalıdır.",
-                    "Görevi kabul ettiğin andan itibaren 1 gün içerisinde tamamlamalısın.",
-                    "Erken bitirerek ek ödüller alabilirsin.",
-                    "Görevi bitirdikten sonra gel al butonuna basabilirsiniz."
+                      "Electronic Waste",
+                      "Collect 12 electronic waste",
+                      "4 days", [
+                    "Total weight must be over 5 kilograms.",
+                    "You must complete the task within 1 day from the moment you accept it.",
+                    "You can get additional rewards if you finish it early.",
+                    "After completing the mission, you can create a post for the officers to collect the waste."
                   ]),
                   const SizedBox(
                     width: 16,
@@ -233,13 +233,13 @@ class _UserHomePageState extends State<UserHomePage> {
                   recommendedItemContainer(
                       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQGq_vg7t4zd0C71aTOLSX8ta6U_enxDyMQA&usqp=CAU",
                       "3.0",
-                      "Karıştırılmış plastik",
-                      "60 plastik topla",
-                      "2 gün", [
-                    "Karton Ağırlığı 5 kilogramın üstünde olmalıdır.",
-                    "Görevi kabul ettiğin andan itibaren 1 gün içerisinde tamamlamalısın.",
-                    "Erken bitirerek ek ödüller alabilirsin.",
-                    "Görevi bitirdikten sonra gel al butonuna basabilirsiniz."
+                      "Mixed Plastic Waste",
+                      "Collect 60 plastic waste",
+                      "2 days", [
+                    "Total weight must be over 10 kilograms.",
+                    "You must complete the task within 2 day from the moment you accept it.",
+                    "You can get additional rewards if you finish it early.",
+                    "After completing the mission, you can create a post for the officers to collect the waste."
                   ]),
                 ]),
               )
@@ -274,16 +274,7 @@ class _UserHomePageState extends State<UserHomePage> {
             return Container(
               width: MediaQuery.of(context).size.width,
               margin: const EdgeInsets.symmetric(horizontal: 5.0),
-              decoration: const BoxDecoration(
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.grey,
-                    spreadRadius: 2,
-                    blurRadius: 4,
-                    offset: Offset(0, 2),
-                  ),
-                ],
-              ),
+              decoration: const BoxDecoration(),
               // borderRadius: BorderRadius.circular(10)),
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(8.0),
@@ -306,14 +297,16 @@ class _UserHomePageState extends State<UserHomePage> {
           color: Colors.white.withOpacity(0.5),
           borderRadius: BorderRadius.circular(10),
           border: Border.all(
-            color: Colors.black, // red as border color
+            color: Colors.green, // red as border color
           ),
         ),
         child: Row(mainAxisAlignment: MainAxisAlignment.spaceAround, children: [
           const SizedBox(
-              width: 30, height: 30, child: Icon(MdiIcons.recycle, size: 30)),
-          const Text("30 item sayenizde geri dönüştürüldü.",
-              style: TextStyle(fontSize: 14)),
+              width: 30,
+              height: 30,
+              child: Icon(MdiIcons.recycle, size: 30, color: Colors.green)),
+          const Text("30 recycled, thanks to you!",
+              style: TextStyle(fontSize: 14, color: Colors.green)),
           Container()
         ]));
   }
@@ -324,8 +317,7 @@ class _UserHomePageState extends State<UserHomePage> {
       automaticallyImplyLeading: false,
       title: Container(
           alignment: Alignment.centerLeft,
-          child:
-              const Text('Ana Sayfa', style: TextStyle(color: Colors.black))),
+          child: const Text('Homepage', style: TextStyle(color: Colors.black))),
       actions: [
         IconButton(
             icon: const Icon(Icons.person, color: Colors.black),
@@ -351,19 +343,19 @@ class _UserHomePageState extends State<UserHomePage> {
       items: const [
         BottomNavigationBarItem(
           icon: Icon(Icons.home),
-          label: 'Ana Sayfa',
+          label: 'Homepage',
         ),
         BottomNavigationBarItem(
           icon: Icon(Icons.all_inbox_outlined),
-          label: 'Tüm İlanlarım',
+          label: 'My Posts',
         ),
         BottomNavigationBarItem(
           icon: Icon(Icons.shopping_cart_outlined),
-          label: 'Dükkan',
+          label: 'Shop',
         ),
         BottomNavigationBarItem(
           icon: Icon(Icons.leaderboard_rounded),
-          label: 'Lider Tablosu',
+          label: 'Leaderboard',
         ),
       ],
     );
@@ -399,14 +391,6 @@ class _UserHomePageState extends State<UserHomePage> {
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(16),
             color: mainColor.withOpacity(0.8),
-            boxShadow: const [
-              BoxShadow(
-                color: Colors.black,
-                spreadRadius: 2,
-                blurRadius: 4,
-                offset: Offset(0, 2),
-              ),
-            ],
           ),
           width: Get.width / 1.8,
           height: 205,

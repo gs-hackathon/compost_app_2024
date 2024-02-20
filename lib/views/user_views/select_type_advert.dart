@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../../models/item.dart';
@@ -16,54 +15,53 @@ class _SelectTypeAdvertState extends State<SelectTypeAdvert> {
   final List<Item> _companies = [
     Item(
         itemNumber: 1,
-        name: 'Kağıt',
+        name: 'Paper',
         imageUrl: 'https://cdn-icons-png.flaticon.com/512/1074/1074055.png',
         star: 3.0),
     Item(
         itemNumber: 2,
-        name: 'Not Kitapları',
+        name: 'Note Book',
         imageUrl:
             'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHtLqURUXcIUw0JN8yoG9JcSY-yuARcF04YA&usqp=CAU',
         star: 2.0),
     Item(
         itemNumber: 3,
-        name: 'Karton',
+        name: 'Cardboard',
         imageUrl:
             'https://st2.depositphotos.com/3907761/7996/v/950/depositphotos_79967044-stock-illustration-box-icon.jpg',
         star: 4.0),
     Item(
         itemNumber: 4,
-        name: 'Demir',
+        name: 'Metal',
         imageUrl:
             'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkZBUzaox-fWeSFxh8D5Zcbp2uq0T9tdjgMA&usqp=CAU',
         star: 4.5),
     Item(
         itemNumber: 5,
-        name: 'Teneke',
-        imageUrl:
-            'https://media.istockphoto.com/vectors/tin-can-waste-vector-id866163458?s=612x612',
+        name: 'Scrap',
+        imageUrl: 'https://cdn-icons-png.flaticon.com/512/5672/5672093.png',
         star: 3.5),
     Item(
         itemNumber: 6,
-        name: 'Aluminyum',
+        name: 'Aluminum',
         imageUrl:
             'https://alsanaluminyum.com/wp-content/uploads/2020/02/ikon-3-aluminyum-profil.png',
         star: 2.5),
     Item(
         itemNumber: 7,
-        name: 'Plastik şişe',
+        name: 'Plastic Bottle',
         imageUrl:
             'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzKbXkgmaASH5GUOPtzMKSKF3ja-gZFk3vlg&usqp=CAU',
         star: 2.0),
     Item(
         itemNumber: 8,
-        name: 'Süt Kapakları',
+        name: 'Bottle Cap',
         imageUrl:
-            'https://media.istockphoto.com/vectors/pack-of-milk-isolated-in-doodle-style-illustration-of-a-black-line-vector-id1254945363',
+            'https://static.vecteezy.com/system/resources/previews/009/391/745/original/bottle-cap-clipart-design-illustration-free-png.png',
         star: 4.0),
     Item(
         itemNumber: 9,
-        name: 'Karıştılımış plastik',
+        name: 'Mixed Plastic',
         imageUrl: 'https://cdn-icons-png.flaticon.com/512/2666/2666681.png',
         star: 3.5),
   ];
@@ -120,7 +118,7 @@ class _SelectTypeAdvertState extends State<SelectTypeAdvert> {
                 Icons.arrow_forward_rounded,
                 color: mainColor,
               ),
-              const Text("Devam",
+              const Text("Continue",
                   style: TextStyle(color: Colors.white, fontSize: 16)),
               const Icon(Icons.arrow_forward_rounded, color: Colors.white)
             ],
@@ -146,7 +144,7 @@ class _SelectTypeAdvertState extends State<SelectTypeAdvert> {
             color: Colors.black,
           ),
         ),
-        child: const Text("Ne gibi ürünleri geri dönüştürmek istiyorsunuz?",
+        child: const Text("What types of recyclings do you want to do?",
             textAlign: TextAlign.center));
   }
 
@@ -161,7 +159,7 @@ class _SelectTypeAdvertState extends State<SelectTypeAdvert> {
           ),
           onPressed: () => Get.back(),
         ),
-        title: Text("${_filters.length} tip ürün seçildi",
+        title: Text("${_filters.length} types selected",
             textAlign: TextAlign.center,
             style: const TextStyle(color: Colors.black)));
   }
@@ -204,7 +202,8 @@ class _SelectTypeAdvertState extends State<SelectTypeAdvert> {
                 children: [
                   Text(
                     company.name!,
-                    style: const TextStyle(fontSize: 14, fontWeight: FontWeight.bold),
+                    style: const TextStyle(
+                        fontSize: 14, fontWeight: FontWeight.bold),
                     textAlign: TextAlign.center,
                   ),
                   // SizedBox(height: 10),

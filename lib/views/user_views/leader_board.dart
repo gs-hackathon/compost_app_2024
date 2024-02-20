@@ -42,22 +42,22 @@ class _LeaderBoardState extends State<LeaderBoard> {
     Person(
         "Ahmet",
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFEMBwOoxcZrk5BBJZDitVllcOHS-FcAo34WHGyEU5Op4NwDidxNfc3_w5wRYty05piUc&usqp=CAU",
-        "Geri dönüştürücü",
+        "Master Recycler",
         860.0),
     Person(
         "Seda",
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDjuTJpjtTRfJ-MPxh2qxiPXYZAQkH_GwmjO3AqQXiI1zQnN3kqJ9JjVSU3eBr-2IFumw&usqp=CAU",
-        "Geri dönüştürücü",
+        "Master Recycler",
         468.0),
     Person(
         "Özgür",
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlN0CN_hs_6cjq51_DhDgPSI1K9eWzka6r1Q&usqp=CAU",
-        "Geri dönüştürücü",
+        "Master Recycler",
         200.0),
     Person(
         "Serdar",
         "https://www.basogullariotomotiv.com/wp-content/uploads/2020/11/5fb6b497-d3ca-4451-a86e-fb55b36816b1.jpg",
-        "Geri dönüştürücü",
+        "Master Recycler",
         160.0)
   ];
   @override
@@ -73,8 +73,7 @@ class _LeaderBoardState extends State<LeaderBoard> {
           onPressed: () => Get.back(),
         ),
         backgroundColor: Colors.white,
-        title:
-            const Text('Lider Tablosu', style: TextStyle(color: Colors.black)),
+        title: const Text('Leaderboard', style: TextStyle(color: Colors.black)),
       ),
       body: people != null
           ? people.isNotEmpty
@@ -153,7 +152,7 @@ class _LeaderBoardState extends State<LeaderBoard> {
                                               style: const TextStyle(
                                                   fontSize: 14,
                                                   fontWeight: FontWeight.bold)),
-                                          const Text("Puan",
+                                          const Text("Point",
                                               style: TextStyle(
                                                   fontSize: 10,
                                                   fontWeight: FontWeight.w300))

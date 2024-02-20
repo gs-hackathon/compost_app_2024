@@ -53,7 +53,7 @@ class _InsertAdvertDetailsState extends State<InsertAdvertDetails> {
             children: [
               Container(
                   alignment: Alignment.centerLeft,
-                  child: const Text("Tarih",
+                  child: const Text("Date",
                       style: TextStyle(
                           fontSize: 16, fontWeight: FontWeight.bold))),
               IconButton(
@@ -69,10 +69,9 @@ class _InsertAdvertDetailsState extends State<InsertAdvertDetails> {
               controller: _timeController,
               decoration: InputDecoration(
                   border: const OutlineInputBorder(
-                      borderRadius:
-                          BorderRadius.all(Radius.circular(22.0)),
+                      borderRadius: BorderRadius.all(Radius.circular(22.0)),
                       borderSide: BorderSide(color: Colors.teal)),
-                  labelText: "Gönderi zamanı",
+                  labelText: "Choose date to pickup",
                   labelStyle: TextStyle(
                       color: Colors.black.withOpacity(0.5),
                       fontSize: 16,
@@ -92,7 +91,7 @@ class _InsertAdvertDetailsState extends State<InsertAdvertDetails> {
           Container(
               margin: const EdgeInsets.only(bottom: 10),
               alignment: Alignment.centerLeft,
-              child: const Text("Fotoğraf",
+              child: const Text("Photo",
                   style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold))),
           Container(
             margin: const EdgeInsets.only(bottom: 16),
@@ -112,7 +111,7 @@ class _InsertAdvertDetailsState extends State<InsertAdvertDetails> {
                               .withOpacity(0.3), // red as border color
                         ),
                       ),
-                      child: Text("Kamera",
+                      child: Text("Camera",
                           style:
                               TextStyle(color: Colors.black.withOpacity(0.5)))),
                 ),
@@ -129,7 +128,7 @@ class _InsertAdvertDetailsState extends State<InsertAdvertDetails> {
                               .withOpacity(0.3), // red as border color
                         ),
                       ),
-                      child: Text("Galeri",
+                      child: Text("Gallery",
                           style:
                               TextStyle(color: Colors.black.withOpacity(0.5)))),
                 ),
@@ -155,7 +154,7 @@ class _InsertAdvertDetailsState extends State<InsertAdvertDetails> {
           Container(
               margin: const EdgeInsets.only(bottom: 10),
               alignment: Alignment.centerLeft,
-              child: const Text("Konum",
+              child: const Text("Location",
                   style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold))),
           Container(child: textFormFieldToInsertEmail()),
           const SizedBox(
@@ -174,11 +173,13 @@ class _InsertAdvertDetailsState extends State<InsertAdvertDetails> {
                   print("bastıı");
                   // insertOrder().then((value) {
                   Get.snackbar(
-                      "İlan oluşturma", "İlanınız Başarıyla oluşturulmuştur.");
+                    "Post Created",
+                    "Your post has been created successfully",
+                  );
                   Get.to(() => const UserHomePage());
                   // });
                 },
-                child: const Text("İlanı Tamamla",
+                child: const Text("Create Post",
                     style: TextStyle(color: Colors.white, fontSize: 16))
                 // style: ElevatedButton.styleFrom(
                 //     primary: Colors.blue,
@@ -337,7 +338,8 @@ class _InsertAdvertDetailsState extends State<InsertAdvertDetails> {
   Future<File> convertBase64ToImage(String encodedStr) async {
     Uint8List bytes = base64.decode(encodedStr);
     var dir = await getApplicationDocumentsDirectory();
-    File file = File("${dir.path}/${DateTime.now().millisecondsSinceEpoch}.png");
+    File file =
+        File("${dir.path}/${DateTime.now().millisecondsSinceEpoch}.png");
     await file.writeAsBytes(bytes);
     return file;
   }
@@ -354,7 +356,7 @@ class _InsertAdvertDetailsState extends State<InsertAdvertDetails> {
         controller: _locationController,
         decoration: InputDecoration(
             border: InputBorder.none,
-            hintText: "Konum",
+            hintText: "Location",
             hintStyle: TextStyle(color: Colors.grey[400])),
       ),
     );

@@ -155,7 +155,7 @@ class _RegisterScreenState extends State<RegisterScreen>
             ])),
         child: const Center(
           child: Text(
-            "Kayıt Ol",
+            "Register",
             style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
           ),
         ),
@@ -172,7 +172,7 @@ class _RegisterScreenState extends State<RegisterScreen>
         controller: passwordController,
         decoration: InputDecoration(
             border: InputBorder.none,
-            hintText: "İsim",
+            hintText: "First Name",
             hintStyle: TextStyle(color: Colors.grey[400])),
       ),
     );
@@ -187,7 +187,7 @@ class _RegisterScreenState extends State<RegisterScreen>
         controller: passwordController,
         decoration: InputDecoration(
             border: InputBorder.none,
-            hintText: "SoyIsim",
+            hintText: "Last Name",
             hintStyle: TextStyle(color: Colors.grey[400])),
       ),
     );
@@ -202,7 +202,7 @@ class _RegisterScreenState extends State<RegisterScreen>
         controller: passwordController,
         decoration: InputDecoration(
             border: InputBorder.none,
-            hintText: "Parola",
+            hintText: "Password",
             hintStyle: TextStyle(color: Colors.grey[400])),
       ),
     );
@@ -217,7 +217,7 @@ class _RegisterScreenState extends State<RegisterScreen>
         controller: passwordConfirmController,
         decoration: InputDecoration(
             border: InputBorder.none,
-            hintText: "Parola Onayla",
+            hintText: "Password Confirm",
             hintStyle: TextStyle(color: Colors.grey[400])),
       ),
     );
@@ -230,7 +230,7 @@ class _RegisterScreenState extends State<RegisterScreen>
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Text(
-            "Kayıt olmak için bilgilerinizi giriniz.",
+            "Welcome to Compost App, to get started, please register",
             style: TextStyle(
               fontSize: 18,
             ),

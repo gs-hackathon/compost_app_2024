@@ -22,21 +22,21 @@ class AllOrders extends StatefulWidget {
 class _AllOrderState extends State<AllOrders> {
   final List<Order> _orders = [
     Order(
-        "Plastik, karton, karton",
+        "Plastic, Paper, Cardboard",
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQGq_vg7t4zd0C71aTOLSX8ta6U_enxDyMQA&usqp=CAU",
-        "Adress; Orhan Gazi Mah. 1672. sok No:42/44"),
+        "Adress; Orhan Gazi Avenue 1672. Street No:42/44"),
     Order(
-        "Plastik, karton, karton",
+        "Plastic, Paper, Cardboard",
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQGq_vg7t4zd0C71aTOLSX8ta6U_enxDyMQA&usqp=CAU",
-        "Adress; Orhan Gazi Mah. 1672. sok No:42/44"),
+        "Adress; Orhan Gazi Avenue 1672. Street No:42/44"),
     Order(
-        "Pil, Elektronik alet",
+        "Battery, Electronic Waste, Metal",
         "https://www.storhub.com.sg/theme/images/articles/201902/5-Ways-to-Recycle-Old-Books-in-Singapore-2-1024x682.jpg",
-        "Adress; Orhan Gazi Mah. 1672. sok No:42/44"),
+        "Adress; Orhan Gazi Avenue 1672. Street No:42/44"),
     Order(
-        "Plastik, karton, karton",
+        "Plastic, Paper, Cardboard",
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv-9at0_5dFtaGusjGE8tagkJN_35Ky8_iqQ&usqp=CAU",
-        "Adress; Orhan Gazi Mah. 1672. sok No:42/44"),
+        "Adress; Orhan Gazi Avenue 1672. Street No:42/44"),
   ];
 
   List<Data>? orders;
@@ -56,7 +56,7 @@ class _AllOrderState extends State<AllOrders> {
     Orders response = await OrderService.getAllOrders();
     setState(() {
       orders = response.data;
-        });
+    });
   }
 
   @override
@@ -72,8 +72,7 @@ class _AllOrderState extends State<AllOrders> {
           onPressed: () => Get.back(),
         ),
         backgroundColor: Colors.white,
-        title:
-            const Text('Tüm İlanlarım', style: TextStyle(color: Colors.black)),
+        title: const Text('My Posts', style: TextStyle(color: Colors.black)),
       ),
       body: /* orders != null
           ? orders.isNotEmpty

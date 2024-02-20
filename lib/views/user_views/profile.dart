@@ -23,7 +23,7 @@ class _UserProfileState extends State<UserProfile> {
           onPressed: () => Get.back(),
         ),
         backgroundColor: Colors.white,
-        title: const Text('Profilim', style: TextStyle(color: Colors.black)),
+        title: const Text('My Profile', style: TextStyle(color: Colors.black)),
       ),
       body: Center(
         child: Column(
@@ -43,13 +43,13 @@ class _UserProfileState extends State<UserProfile> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  const Text("Kullanıcı Adı",
+                  const Text("Username",
                       style:
                           TextStyle(fontSize: 16, fontWeight: FontWeight.w300)),
                   SizedBox(
                     width: Get.width / 20,
                   ),
-                  const Text("Timur",
+                  const Text("Furkan",
                       style:
                           TextStyle(fontSize: 16, fontWeight: FontWeight.w600)),
                 ],
@@ -63,16 +63,16 @@ class _UserProfileState extends State<UserProfile> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  const Text("Adres",
+                  const Text("Adress",
                       style:
                           TextStyle(fontSize: 16, fontWeight: FontWeight.w300)),
                   SizedBox(
                     width: Get.width / 20,
                   ),
                   Text(
-                      "${"Orhan Gazi mah. 1672. sok no: 42/44".substring(0, 20)}...",
-                      style:
-                          const TextStyle(fontSize: 16, fontWeight: FontWeight.w600)),
+                      "${"Orhan Gazi Avenue. 1672. Street no: 42/44".substring(0, 20)}...",
+                      style: const TextStyle(
+                          fontSize: 16, fontWeight: FontWeight.w600)),
                 ],
               ),
             ),
@@ -84,7 +84,7 @@ class _UserProfileState extends State<UserProfile> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  const Text("Şifre",
+                  const Text("Password",
                       style:
                           TextStyle(fontSize: 16, fontWeight: FontWeight.w300)),
                   SizedBox(
@@ -112,7 +112,8 @@ class _UserProfileState extends State<UserProfile> {
                     backgroundColor: mainColor,
                     padding: const EdgeInsets.all(16),
                     fixedSize: Size(Get.width / 1.1, 50)),
-                child: const Text("Profili Güncelle", style: TextStyle(fontSize: 16))),
+                child: const Text("Update Profile",
+                    style: TextStyle(fontSize: 16))),
           ],
         ),
       ),
